@@ -1,0 +1,404 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap'
+ );
+
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ :root {
+     --MainColor: #0073ff;
+ }
+
+ ::-webkit-scrollbar {
+     background-color: #e5e5e5;
+     width: 15px;
+     box-shadow: inset 0 0 10px #ddd;
+
+ }
+
+ ::-webkit-scrollbar-thumb {
+     background-color: #0073ffa6;
+     border-radius: 20px;
+
+ }
+
+ ::-webkit-scrollbar-thumb:hover {
+     background-color: var(--MainColor);
+ }
+
+
+
+ * {
+     font-family: "Montserrat", sans-serif;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+
+ li,
+ a,
+ button {
+     font-family: "Montserrat", sans-serif;
+     font-weight: 500px;
+     font-size: 17px;
+     color: #0073ff;
+     text-decoration: none;
+     font-size: 17px;
+     font-weight: 600;
+ }
+
+ header {
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 15px 10px;
+     background-color: #f0f0f0;
+     width: 100%;
+     z-index: 999;
+ }
+
+ .logo {
+     cursor: pointer;
+     color: #0073ff;
+     margin-right: auto;
+     margin-left: 100px;
+     font-size: 25px;
+     letter-spacing: 3px;
+ }
+
+
+
+ .Nav_links {
+     list-style: none;
+ }
+
+ .Nav_links li {
+     display: inline-block;
+     padding: 0px 20px;
+ }
+
+
+ .Nav_links li a {
+     transition: all 0.3s ease 0s;
+ }
+
+ .Nav_links li a:hover {
+     color: #00679e;
+     border-bottom: #0073ff 3px solid;
+ }
+
+ button {
+     padding: 9px 25px;
+     background-color: var(--MainColor);
+     border: none;
+     border-radius: 50px;
+     cursor: pointer;
+     transition: all 0.3s ease 0s;
+     margin-left: 50px;
+     color: white;
+
+ }
+
+ button:hover {
+     background-color: rgb(0, 108, 134);
+     box-shadow: 0px 0px 10px 1px rgb(0 136 169);
+ }
+
+ /* ======================================================================== */
+ /* ============================== section ================================= */
+ /* ======================================================================== */
+
+ section {
+     padding: 100px 200px;
+ }
+
+ .main {
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     background: url(abstract-dark-blue-futuristic-digital-grid-background.jpg) no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+
+ .main h2 {
+     color: white;
+     font-size: 1.6em;
+     font-weight: 500;
+ }
+
+ .WD {
+     width: 724px;
+     color: #0073ff;
+     font-size: 88px;
+     font-weight: 600;
+     overflow: hidden;
+     white-space: nowrap;
+     border-right: 2px solid #0073ff;
+     animation: Write_Mode 2s 1s steps(12) both, Border 1s 3s infinite;
+ }
+
+ @keyframes Write_Mode {
+     0% {
+         width: 0px;
+     }
+
+     100% {
+         width: 724px;
+     }
+ }
+
+ @keyframes Border {
+     from {
+         border-right: 2px solid #0073ff
+     }
+
+     to {
+         border-right: transparent;
+     }
+ }
+
+ .main h2 .adham {
+     color: #0073ff;
+     font-size: 1.5em;
+     font-weight: 500;
+ }
+
+ .main h3 {
+     color: white;
+     font-size: 1em;
+     font-weight: 700;
+     letter-spacing: 5px;
+     margin-top: -10px;
+     margin-bottom: 30px;
+ }
+
+
+ .main-btn {
+     color: white;
+     background-color: #0073ff;
+     text-decoration: none;
+     font-size: 1.1em;
+     display: inline-block;
+     font-weight: 600;
+     padding: 0.6375em 3.0875em;
+     letter-spacing: 1px;
+     border-radius: 10px;
+     margin-left: 40px;
+     transition: all 0.3s ease 0s;
+     animation-name: up-down;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+     animation-timing-function: cubic-bezier(0.42, 0, 0.19, 0.99);
+ }
+
+ .main-btn:hover {
+     background-color: #005fd2;
+     transform: scale(1.04);
+
+ }
+
+ @keyframes up-down {
+     to {
+         transform: scale(1.04);
+     }
+ }
+
+
+ .social-icons a {
+     color: white;
+     font-size: 25px;
+     padding-right: 31px;
+     transition: all 0.4s ease 0s;
+ }
+
+ .social-icons {
+     margin-left: 70px;
+     margin-top: 23px;
+     display: flex;
+ }
+
+
+
+ .social-icons a:hover {
+     font-size: 29px;
+     text-shadow: 0 0 25px white;
+ }
+
+ @keyframes Scale {
+     from {
+         transform: scale(1.04);
+     }
+ }
+
+
+ .title {
+     display: flex;
+     justify-content: center;
+     color: var(--MainColor);
+     font-size: 2.2em;
+     font-weight: bold;
+     margin-bottom: 30px;
+ }
+
+
+ .content {
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     flex-wrap: wrap;
+     margin-top: 65px;
+
+ }
+
+ .card {
+
+     width: 21.25em;
+     box-shadow: 0 5px 25px rgba(1, 1, 1, 50%);
+     border-radius: 10px;
+     padding: 25px;
+     margin: 15px;
+     transition: 0.4s ease;
+ }
+
+ .card:hover {
+     transform: scale(1.05);
+ }
+
+ .icon {
+     font-size: 7em;
+     text-align: center;
+     color: #0073ff;
+ }
+
+
+ .info {
+     text-align: center;
+ }
+
+ .info h3 {
+     font-size: 1.7em;
+     color: #0073ff;
+     margin: 15px;
+     font-weight: 700;
+ }
+
+ .info p {
+     font-size: 1em;
+     color: #000000;
+ }
+
+
+ .achievements {
+     background-color: #000020;
+ }
+
+ .achievements .content {
+     margin-top: 30px;
+ }
+
+ .achievements_card1,
+ .achievements_card2 {
+     background-color: var(--MainColor);
+     min-height: 14em;
+     width: 23em;
+     overflow: hidden;
+     border-radius: 10px;
+     margin: 20px;
+     transition: 0.7s ease;
+ }
+
+ .achievements_card2:hover {
+     transform: scale(1.3) translateX(-155px);
+     box-shadow: 0 5px 25px rgba(1, 1, 1, 50%);
+
+ }
+
+ .achievements_card1:hover {
+     transform: scale(1.3) translateX(155px);
+     box-shadow: 0 5px 25px rgb(1, 1, 1);
+ }
+
+ .achievements_image img {
+     width: 100%;
+     border-radius: 10px;
+     border: 5px solid var(--MainColor);
+ }
+
+ .achievements_info {
+     padding: 15px;
+
+ }
+
+ .achievements_info p {
+     font-size: 0.8em;
+     color: #000000;
+     font-weight: bold;
+
+ }
+
+ .achievements_info a {
+     color: #ffffff;
+     text-decoration: none;
+
+ }
+
+ .achievements_info a:hover {
+     color: #c9c9c9;
+ }
+
+ .cards_contact p {
+     font-weight: 700;
+     font-size: 1.1em;
+ }
+
+ .cards_contact h3 {
+     font-weight: 700;
+
+ }
+
+ .cards_contact .icon {
+     font-size: 5em;
+
+ }
+
+ .footer {
+     background-color: var(--MainColor);
+     color: #ffffff;
+     padding: 1em;
+     display: flex;
+     flex-direction: row;
+     align-content: center;
+     justify-content: space-between;
+ }
+
+ .footer span {
+     color: #000020;
+     letter-spacing: 1.5px;
+ }
+
+ .copy {
+     color: #000020;
+ }
+
+ .footer .social-icons {
+     margin-top: 0px;
+     margin-left: 0px;
+     display: block;
+ }
+
+ @media (max-width:1300px) {
+     .achievements_card2:hover {
+         transform: scale(1.3);
+         box-shadow: 0 5px 25px rgba(1, 1, 1, 50%);
+
+     }
+
+     .achievements_card1:hover {
+         transform: scale(1.3);
+         box-shadow: 0 5px 25px rgb(1, 1, 1);
+     }
+ }
